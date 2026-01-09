@@ -1,16 +1,82 @@
-# React + Vite
+Aadrila Frontend
+Modern marketing website for a document automation platform, built with React (Vite) and deployed on Vercel. It includes fully responsive sections like Hero, Products, About Us, Team, Blogs, and Contact.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Features
+Responsive landing page layout with modern cards and gradients.
 
-Currently, two official plugins are available:
+Products section with 3D-style document visuals and asset-based images.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+About Us with Vision & Mission cards.
 
-## React Compiler
+Meet Our Team carousel-style layout with featured member.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Blogs section with three highlight cards and navigation controls.
 
-## Expanding the ESLint configuration
+Contact Us form with basic client-side handling and address blocks.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+React + Vite
+
+JavaScript (ES6+)
+
+CSS modules / section-based CSS files
+
+Deployed on Vercel
+
+📦 Getting Started
+Prerequisites
+Node.js (LTS recommended)
+
+npm or yarn
+
+Git
+
+Installation
+bash
+# Clone this repository
+git clone https://github.com/YOUR-USERNAME/aadrila-frontend.git
+
+# Go into the project directory
+cd aadrila-frontend
+
+# Install dependencies
+npm install
+# or
+yarn install
+Run in Development
+bash
+npm run dev
+# or
+yarn dev
+The app will start on http://localhost:5173 (or the port shown in your terminal).
+
+📁 Project Structure
+text
+aadrila-frontend/
+├─ public/
+├─ src/
+│  ├─ assets/
+│  │  ├─ product1.jpg
+│  │  ├─ product2.jpg
+│  │  └─ product3.jpg
+│  ├─ components/
+│  │  ├─ Hero.jsx
+│  │  ├─ Products.jsx
+│  │  ├─ AboutUs.jsx
+│  │  ├─ MeetTeam.jsx
+│  │  ├─ Blogs.jsx
+│  │  └─ ContactUs.jsx
+│  ├─ styles/
+│  │  ├─ Products.css
+│  │  ├─ AboutUs.css
+│  │  ├─ MeetTeam.css
+│  │  ├─ Blogs.css
+│  │  └─ ContactUs.css
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ .gitignore
+├─ index.html
+├─ package.json
+└─ vite.config.js
+Adjust folder names if you used a different structure (for example, CSS files directly in src/).
+
