@@ -1,0 +1,252 @@
+.products {
+  padding: 6rem 2rem;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.products-subtitle {
+  color: #999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.products-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  position: relative;
+}
+
+.product-item.left .product-content {
+  order: 2;
+}
+
+.product-item.left .product-visual {
+  order: 1;
+}
+
+/* Decorative Background Elements */
+.product-decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.decoration-left {
+  left: -20%;
+  top: -20%;
+}
+
+.decoration-right {
+  right: -20%;
+  top: -20%;
+}
+
+.curved-blob {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: linear-gradient(135deg, rgba(180, 210, 255, 0.15) 0%, rgba(200, 220, 255, 0.08) 100%);
+  border-radius: 50% 40% 60% 50%;
+  transform: rotate(-25deg);
+}
+
+.decoration-right .curved-blob {
+  transform: rotate(25deg);
+}
+
+.dot-grid {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(circle, rgba(200, 200, 200, 0.35) 3px, transparent 3px);
+  background-size: 25px 25px;
+}
+
+.decoration-left .dot-grid {
+  left: 100px;
+  right: auto;
+}
+
+/* Product Content */
+.product-content {
+  position: relative;
+  z-index: 2;
+}
+
+.product-badge {
+  display: inline-block;
+  padding: 0.5rem 1.3rem;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 4px 15px rgba(230, 126, 80, 0.3);
+}
+
+.product-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 1.8rem;
+  line-height: 1.3;
+}
+
+.product-details {
+  margin-bottom: 2.5rem;
+}
+
+.product-section {
+  margin-bottom: 1.8rem;
+}
+
+.product-section h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.product-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.product-section ul li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.product-section ul li::before {
+  content: '•';
+  color: #666;
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+.product-buttons {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  background: linear-gradient(135deg, #4A7BCC 0%, #5B8DD8 100%);
+  color: white;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(74, 123, 204, 0.3);
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(74, 123, 204, 0.4);
+}
+
+/* Product Image Container */
+.product-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.product-image-container {
+  width: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .product-item {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .product-item.left .product-content,
+  .product-item.left .product-visual {
+    order: unset;
+  }
+
+  .product-buttons {
+    flex-direction: column;
+  }
+
+  .product-title {
+    font-size: 1.6rem;
+  }
+
+  .curved-blob {
+    width: 500px;
+    height: 500px;
+  }
+
+  .dot-grid {
+    width: 100px;
+    height: 100px;
+  }
+}
