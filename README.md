@@ -1,7 +1,9 @@
 Aadrila Frontend
+
 Modern marketing website for a document automation platform, built with React (Vite) and deployed on Vercel. It includes fully responsive sections like Hero, Products, About Us, Team, Blogs, and Contact.
 
 ✨ Features
+
 Responsive landing page layout with modern cards and gradients.
 
 Products section with 3D-style document visuals and asset-based images.
@@ -15,6 +17,7 @@ Blogs section with three highlight cards and navigation controls.
 Contact Us form with basic client-side handling and address blocks.
 
 🛠️ Tech Stack
+
 React + Vite
 
 JavaScript (ES6+)
@@ -51,7 +54,8 @@ yarn dev
 The app will start on http://localhost:5173 (or the port shown in your terminal).
 
 📁 Project Structure
-text
+
+
 aadrila-frontend/
 ├─ public/
 ├─ src/
