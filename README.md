@@ -54,8 +54,6 @@ yarn dev
 The app will start on http://localhost:5173 (or the port shown in your terminal).
 
 📁 Project Structure
-
-
 aadrila-frontend/
 ├─ public/
 ├─ src/
@@ -82,5 +80,5 @@ aadrila-frontend/
 ├─ index.html
 ├─ package.json
 └─ vite.config.js
-Adjust folder names if you used a different structure (for example, CSS files directly in src/).
+
 
